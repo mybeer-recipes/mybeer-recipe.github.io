@@ -60,4 +60,5 @@ social:
     url: http://twitter.com/MybeerRecipes
   - title: github
     url: https://github.com/mybeer-recipes
-
+  - title: gitter
+    url: https://gitter.im/mybeer-recipes/community
