@@ -2,6 +2,7 @@ baseURL: https://mybeer.recipes
 languageCode: en-us
 title: mybeer.recipes
 params:
+    favicon: img/favicon.ico
     social:
     - title: twitter
       url: http://twitter.com/MybeerRecipes
