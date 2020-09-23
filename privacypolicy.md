@@ -1,3 +1,7 @@
+---
+layout: blank
+---
+
 **Privacy Policy**
 
 Ross Merrigan built the mybeer.recipes app as a Commercial app. This SERVICE is provided by Ross Merrigan and is intended for use as is.
