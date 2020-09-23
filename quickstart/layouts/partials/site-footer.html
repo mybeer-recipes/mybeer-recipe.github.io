@@ -1,0 +1,20 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}</span>
+            </div>
+
+            {{ partial "social-follow.html" . }}
+
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="/privacypolicy">Privacy Policy</a>
+                    </li>
+                    <li><a href="/termsandconditions">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

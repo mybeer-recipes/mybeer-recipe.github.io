@@ -1,0 +1,11 @@
+<div class="col-md-4">
+    <ul class="list-inline social-buttons">
+    {{ range .Site.Params.social  }}
+      <li>
+        <a href="{{ .url }}"  target="_blank">
+          <i class="fab fa-{{ .title }}"></i>        
+        </a>
+      </li>
+    {{ end }}
+    </ul>
+</div>
