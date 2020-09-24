@@ -1,6 +1,7 @@
 baseURL: https://mybeer.recipes
 languageCode: en-us
 title: mybeer.recipes
+publishDir: docs
 params:
     favicon: img/favicon.ico
     social:
