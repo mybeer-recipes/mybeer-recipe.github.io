@@ -1,0 +1,26 @@
+{{ $script := .Site.Data.webpack_assets.app }}
+{{ with $script.js }}
+  <script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>
+{{ end }}
+<script src="/js/header.js"></script>
+
+<script src="https://kit.fontawesome.com/75d7a18bc8.js" crossorigin="anonymous"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBsi6MY3oBNhMvCjXVdNOZt5c2Z7EMJW3U",
+    authDomain: "mybeer-recipes.firebaseapp.com",
+    databaseURL: "https://mybeer-recipes.firebaseio.com",
+    projectId: "mybeer-recipes",
+    storageBucket: "mybeer-recipes.appspot.com",
+    messagingSenderId: "436478736266",
+    appId: "1:436478736266:web:c1ec25e28a1be731087a73",
+    measurementId: "G-TFQN26BKLY"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
