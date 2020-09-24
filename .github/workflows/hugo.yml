@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Hugo site CI
 
 on:
   push:
@@ -15,6 +15,11 @@ jobs:
     - uses: actions/checkout@master
     - name: Hugo Build
       uses: klakegg/actions-hugo@1.0.0
+    - name: Updating docs
+      uses: matheusalbino/git-commit@v1.0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        message: Updating docs       
     - uses: actions/upload-artifact@master
       with:
         name: website
