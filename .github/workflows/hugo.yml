@@ -20,7 +20,3 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         message: Updating docs       
-    - uses: actions/upload-artifact@master
-      with:
-        name: website
-        path: './public'      
