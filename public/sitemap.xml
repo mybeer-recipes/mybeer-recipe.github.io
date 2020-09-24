@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://mybeer.recipes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mybeer.recipes/nondisclosureagreement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mybeer.recipes/privacypolicy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mybeer.recipes/termsandconditions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mybeer.recipes/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mybeer.recipes/tags/</loc>
+  </url>
+  
+</urlset>
