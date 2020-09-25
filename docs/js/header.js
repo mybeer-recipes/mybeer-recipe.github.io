@@ -1,7 +1,7 @@
 var animatedHeader = (function() {
 
 	var docElem = document.documentElement,
-		header = document.querySelector( '.navbar-fixed-top' ),
+		header = document.querySelector( '.navbar.fixed-top' ),
 		didScroll = false,
 		changeHeaderOn = 100;
 		
@@ -37,15 +37,17 @@ var animatedHeader = (function() {
 
 var navBar = (function() {
 
-	navbarBtn = document.querySelector( '.navbar-toggle' ),
+	navbarBtn = document.querySelector( '.navbar-toggler' ),
 	navbar = document.querySelector( '.navbar-collapse' );
 		
 	function init() {
 		navbarBtn.addEventListener( 'click', function( event ) {
 			navbar.classList.toggle('show' );
+			console.log("hit");
 		}, false );
 	}
 
 	init();
 
 })();
+
