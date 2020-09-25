@@ -20,17 +20,30 @@ var animatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			header.classList.add('navbar-shrink' );
-			//classie.add( header, 'navbar-shrink' );
 		}
 		else {
 			header.classList.remove('navbar-shrink' );
-			//classie.remove( header, 'navbar-shrink' );
 		}
 		didScroll = false;
 	}
 
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop;
+	}
+
+	init();
+
+})();
+
+var navBar = (function() {
+
+	navbarBtn = document.querySelector( '.navbar-toggle' ),
+	navbar = document.querySelector( '.navbar-collapse' );
+		
+	function init() {
+		navbarBtn.addEventListener( 'click', function( event ) {
+			navbar.classList.toggle('show' );
+		}, false );
 	}
 
 	init();
