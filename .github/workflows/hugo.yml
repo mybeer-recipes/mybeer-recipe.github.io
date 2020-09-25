@@ -8,13 +8,13 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@master
     - name: Hugo Build
       uses: klakegg/actions-hugo@1.0.0
+      env:
+        HUGO_ENV: production
     - name: Updating docs
       uses: matheusalbino/git-commit@v1.0.1
       with:
