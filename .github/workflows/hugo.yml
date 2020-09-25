@@ -13,8 +13,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Hugo Build
       uses: klakegg/actions-hugo@1.0.0
-      env:
-        HUGO_ENV: production
+      with:
+        env: production
     - name: Updating docs
       uses: matheusalbino/git-commit@v1.0.1
       with:

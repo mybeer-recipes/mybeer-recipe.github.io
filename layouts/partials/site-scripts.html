@@ -2,8 +2,8 @@
 {{ with $script.js }}
   <script src="{{ relURL (printf "%s%s" "dist/" .) }}"></script>
 {{ end }}
-<script src="/js/header.js"></script>
-<script src="https://kit.fontawesome.com/75d7a18bc8.js" crossorigin="anonymous"></script>
+<script src="/js/header.js" async></script>
+<script src="https://kit.fontawesome.com/75d7a18bc8.js" crossorigin="anonymous" async></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
 <script>

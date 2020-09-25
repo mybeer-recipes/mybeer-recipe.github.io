@@ -2,7 +2,7 @@
     <ul class="list-inline social-buttons">
     {{ range .Site.Params.social  }}
       <li class="list-inline-item">
-        <a href="{{ .url }}" rel="noreferrer" target="_blank">
+        <a href="{{ .url }}" rel="noreferrer" target="_blank" title="{{ .title }}">
           <i class="fab fa-{{ .title }}"><span class="sr-only">{{ .title }}</span> </i>        
         </a>
       </li>
