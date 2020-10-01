@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="mybeer.recipes - brewing beer, wine and cider for commercial brewer's and the homebrewer">
 
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.75.1" />
     
     
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     
 
     
@@ -22,14 +22,23 @@
     
 
     
-	<link href="/css/base.css" rel="stylesheet"  type="text/css">
-<link href="/css/styles.css" rel="stylesheet"  type="text/css">
+      
+    
+	<link href="/css/base.css" rel="stylesheet" type="text/css">
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="preload stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap' rel="preload stylesheet" type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="preload stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&display=swap' rel="preload stylesheet" type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&display=swap' rel="preload stylesheet" type='text/css'>
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="preload stylesheet"
+    type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap' rel="preload stylesheet"
+    type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap"
+    rel="preload stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&display=swap'
+    rel="preload stylesheet" type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&display=swap' rel="preload stylesheet"
+    type='text/css'>
   </head>
 
   <body id="page-top" class="index">
@@ -83,7 +92,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <span class="copyright">Copyright &copy;  mybeer.recipes 2020 </span>
+                <span class="copyright">Copyright &copy; 
+                    mybeer.recipes 2020 </span>
             </div>
 
             <div class="col-sm">
@@ -119,47 +129,52 @@
         </div>
     </div>
 </footer>
+
+<nav class="navbar fixed-bottom-left" id="cookiePolicy" style="display: none;">
+    <div class="card" style="width: 18rem;">
+        <h5 class="card-header">This website uses cookies</h5>
+        <div class="card-body">
+            <p class="card-text">We use cookies to improve user experience. Choose what cookies you allow us to use. You
+                can
+                read more about our Cookie Policy in our <a href="/privacypolicy">Privacy policy</a>
+            </p>
+            <div class=" form-check">
+                <input class="form-check-input" type="checkbox" value="analytics" id="defaultCheck1" checked>
+                <label class="form-check-label" for="defaultCheck1">
+                    Analytics
+                </label>
+                <small class="text-muted">
+                    <br>
+                    Data collect, process and store using Google Analytics ('Google Analytics data') is secure and kept
+                    confidential.
+                </small>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <a href="#" class="btn btn-primary" onclick="cookiePolicy.accept()">Accept</a>
+            <a href="#" class="btn btn-secondary" onclick="cookiePolicy.decline()">Decline All</a>
+        </div>
+    </div>
+</nav>
     
 
 <script src="/js/header.js" async></script>
 <script src="https://kit.fontawesome.com/75d7a18bc8.js" crossorigin="anonymous" async></script>
-<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
 <script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyBsi6MY3oBNhMvCjXVdNOZt5c2Z7EMJW3U",
-    authDomain: "mybeer-recipes.firebaseapp.com",
-    databaseURL: "https://mybeer-recipes.firebaseio.com",
-    projectId: "mybeer-recipes",
-    storageBucket: "mybeer-recipes.appspot.com",
-    messagingSenderId: "436478736266",
-    appId: "1:436478736266:web:c1ec25e28a1be731087a73",
-    measurementId: "G-TFQN26BKLY"
-  };
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  var externalScripts = {
+    "analytics": [{
+        "src": "https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"
+      },
+      {
+        "src": "https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"
+      },
+      {
+        "src": "/js/firebaseConfig.js"
+      }
+    ]
+  }
 </script>
-
-
-
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+<script src="/js/cookiePolicy.js"></script>
   </body>
 </html>

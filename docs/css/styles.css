@@ -12,6 +12,45 @@
      color: #673ab7 !important;
  }
 
+ .btn-primary {
+     color: #fff;
+     background-color: #673ab7;
+     border-color: #673ab7;
+     text-transform: uppercase;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     font-size: 14px;
+
+ }
+
+ .btn-primary:hover {
+     text-decoration: none;
+     color: #fff;
+     background-color: #b388ff;
+ }
+
+ .btn-secondary:hover {
+     text-decoration: none;
+     color: #fff;
+     background-color: #afbfcc;
+ }
+
+ .btn-secondary {
+     color: #fff;
+     background-color: #6c757d;
+     border-color: #6c757d;
+     text-transform: uppercase;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     font-size: 14px;
+ }
+
+ .form-check-label {
+     font-weight: 500;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+ }
+
  p {
      font-size: 14px;
      line-height: 1.75;
@@ -47,7 +86,7 @@
      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-weight: 700;
  }
- 
+
 
  .btn-xl {
      padding: 20px 40px;
@@ -62,12 +101,16 @@
  }
 
 
- .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active {
-    border-color: #673ab7;
-    color: #fff;
-    background-color: #b388ff;
-    text-decoration: none;
-}
+ .btn-xl:hover,
+ .btn-xl:focus,
+ .btn-xl:active,
+ .btn-xl.active {
+     border-color: #673ab7;
+     color: #fff;
+     background-color: #b388ff;
+     text-decoration: none;
+ }
+
  .navbar {
      border-color: transparent;
      background-color: #222;
@@ -89,7 +132,8 @@
  .navbar .navbar-collapse {
      border-color: rgba(255, 255, 255, .02);
  }
-/* 
+
+ /* 
  .navbar .navbar-toggle {
      border-color: #673ab7;
      background-color: #673ab7;
@@ -124,7 +168,7 @@
 
  @media(min-width:768px) {
      .navbar {
-         padding: 25px 0;
+         /* padding: 25px 0; */
          border: 0;
          background-color: transparent !important;
          -webkit-transition: padding .3s;
@@ -427,7 +471,7 @@
  ::-moz-selection {
      text-shadow: none;
      background: #673ab7;
- } 
+ }
 
  ::selection {
      text-shadow: none;
@@ -444,4 +488,16 @@
 
  body {
      webkit-tap-highlight-color: #673ab7;
+ }
+
+ .card-text {
+     font-size: 1rem;
+     font-weight: 400;
+     text-transform: none;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+ .card-header {
+     font-weight: 600;
+     font-size: 0.9rem;
  }
