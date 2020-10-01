@@ -5,7 +5,11 @@
     <link>https://mybeer.recipes/</link>
     <description>Recent content on mybeer.recipes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mybeer.recipes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://mybeer.recipes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title></title>
       <link>https://mybeer.recipes/nondisclosureagreement/</link>
