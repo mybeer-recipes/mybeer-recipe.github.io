@@ -5,10 +5,6 @@
     <link>https://mybeer.recipes/categories/</link>
     <description>Recent content in Categories on mybeer.recipes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://mybeer.recipes/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://mybeer.recipes/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
